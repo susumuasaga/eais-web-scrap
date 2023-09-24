@@ -1,0 +1,181 @@
+Login:
+https://www.eais.go.kr/moct/awp/abb01/AWPABB01F01
+<div class="loginForm">
+  <dl>
+    <dt><label for="membId">아이디</label></dt>
+    <dd>
+      <input type="text" id="membId" name="membId" placeholder="아이디">
+      <label for="membId" class="hidden">아이디입력</label>
+    </dd>
+    <dt><label for="pwd">비밀번호</label></dt>
+    <dd>
+      <input type="password" id="pwd" name="pwd" placeholder="비밀번호">
+    </dd>
+    <dd>
+      <input type="checkbox" id="membIdSave" name="membIdSave">
+      <label for="membIdSave">아이디 저장</label>
+    </dd>
+  </dl>
+  <button type="button" class="btnLogin">로그인</button>
+</div>
+
+POST /awp/AWPABB01R01 HTTP/1.1
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9,pt;q=0.8
+Access-Control-Allow-Origin: *
+Connection: keep-alive
+Content-Length: 48
+Content-Type: application/json
+Cookie: TMOSHCooKie=t7eOzDaGhilZkFHfqEpadHJg6qb+hJh6yjj3IVj+smHhHJ0XjEY/PfN9pkZ1NX7bDNOxDkIK08VUaHl6SdcMhkQymb366EGNAAAAAQ==; clientid=050048699887; SESSION=YTkyYTBjYjQtZjgyNS00ZjA3LTg5ZWEtMzU4OGYxNTA4NzBj
+DNT: 1
+Host: www.eais.go.kr
+Origin: https://www.eais.go.kr
+Referer: https://www.eais.go.kr/moct/awp/abb01/AWPABB01F01
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+UntClsfCd: 1000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+{"loginId":"susumu1964","loginPwd":"sus3141592"}
+
+<div data-v-585e57ba="" class="bldreDiv bldre1">
+  <a data-v-585e57ba="" href="javascript:void(0)">
+    <strong data-v-585e57ba="">
+      <b data-v-585e57ba="">건축물대장</b> 발급
+    </strong>
+    <p data-v-585e57ba="" class="tts">
+      건축물 대장을 개인정보 동의와
+      <br data-v-585e57ba>
+      간단한 개인정보 입력 후 발급이 가능합니다.
+    </p>
+  </a>
+</div>
+
+<div class="swal-overlay swal-overlay--show-modal" tabindex="-1">
+  <div class="swal-modal" role="dialog" aria-modal="true">
+    <div class="swal-title" style="">알림</div>
+    <div class="swal-content">
+      <div>신청할 민원은 최대 5건까지 추가할 수 있습니다.</div>
+    </div>
+    <div class="swal-footer">
+      <div class="swal-button-container">
+        <button class="swal-button swal-button--confirm">확인</button>
+        <div class="swal-button__loader">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<li class="multiselect__element">
+  <span data-select="선택" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option multiselect__option--highlight">
+  <div class="option__desc">
+  <div style="padding-bottom: 10px;"><span class="option__title st1">지번주소</span> <span class="option__title"> 경기도 고양시 일산동구 마두동 796 강촌마을7단지아파트</span></div> <div><span class="option__title st2">도로명주소</span> <span class="option__title"> 경기도 고양시 일산동구 강석로 152(마두동,강촌마을7단지아파트)</span></div> <!----> <!----></div></span> <!---->
+</li>
+
+
+registration issuance:
+https://www.eais.go.kr/moct/bci/aaa02/BCIAAA02L01
+
+button.btnAddrSrch:
+<button type="button" title="도로명주소 조회" class="btnAddrSrch">
+  도로명주소로 조회
+</button>
+
+address = "경기도 고양시 일산동구 강석로 152 701동 202호"
+
+div.popAddrSearch:
+<div class="popAddrSearch" style="display: block;">
+  <strong class="title">
+    도로명주소 조회
+    <button type="button" title="도로명주소 닫기" class="popClose">닫기</button>
+  </strong>
+  <div class="contents">
+    <div class="formIn">
+      <input type="text" title="통합주소검색" id="keyword" name="keyword" placeholder="검색어 입력 예) 한누리대로 411, 국립중앙박물관, 상암동 1595" class="ht38 wd80">
+      <button type="button" title="조회하기" class="btnNext btnSolid btnNormal btn_dark">조회하기</button>
+      <p>
+        <em>검색예시</em>
+        서울시 마포구 성암로 301
+      </p>
+    </div>
+    <div class="addrResult">
+      <p>
+        검색어
+        <strong>'경기도 고양시 일산동구 강석로 152 701동 202호'</strong>
+        에 대한 검색결과
+        <em>총 1건</em>
+        입니다.
+      </p>
+    </div>
+    <div class="addrList">
+      <ul>
+        <li>
+          경기도 고양시 일산동구 강석로 152(경기도 고양시 일산동구 마두동 796 강촌마을7단지아파트)
+          <button type="button">선택</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+button.ag-checkbox-input:
+<input ref="eInput" class="ag-input-field-input ag-checkbox-input" type="checkbox" id="ag-25-input" aria-label="Press Space to toggle all rows selection (checked)" tabindex="-1">
+
+button.btnAddCart:
+<button type="button" title="신청할 민원 추가" class="btnAddCart">신청할 민원 담기</button>
+
+button.btnSubmit:
+<button class="btnSubmit mt10" style="">건축물대장 발급 신청</button>
+
+cart:
+https://www.eais.go.kr/moct/bci/aaa02/BCIAAA02F01
+
+button.btnNext:
+<button type="button" title="조회하기" class="btnNext btnSolid btnNormal btn_dark">조회하기</button>
+
+issued registration list:
+https://www.eais.go.kr/moct/bci/aaa04/BCIAAA04L01
+
+location = "경기도 고양시 일산동구 마두동 796"
+table.tableScroll:
+<table class="tableScroll">
+  <caption>건축물대장 신청내역</caption>
+  <thead class="scroll">
+    <tr>
+      <th style="width: 10%;">접수일</th>
+      <th style="width: 10%;">처리일</th>
+      <th style="width: 15%;">대장서식</th>
+      <th style="width: auto;">건축물 위치</th>
+      <th style="width: 20%;">처리상태</th>
+      <th style="width: 10%;">신청서</th>
+    </tr>
+  </thead>
+  <tbody class="scroll" style="max-height: none !important;">
+    <tr>
+      <td style="width: 10%;">2023-09-22</td>
+      <td style="width: 10%;">2023-09-22</td>
+      <td style="width: 15%;">총괄표제부</td>
+      <td class="al" style="width: auto;">경기도 고양시 일산동구 마두동 796</td>
+      <td style="width: 20%;">
+        <a href="javascript:void(0);" title="발급" class="tbsBadge st1">발급</a>
+      </td>
+      <td style="width: 10%;"><!----></td>
+    </tr>
+  </tbody>
+</table>
+
+Loads report on a new window:
+https://www.eais.go.kr/report/BCIAAA04V01?param=...&actionId=BCIAAA04L01
+
+button.report_menu_print_button_svg:
+<button title="인쇄" id="re_printc29f3e43d6cc44720aa28ff062f30e80f" onclick="m_reportHashMap['c29f3e43d6cc44720aa28ff062f30e80f'].printWindowView();return false;" class="report_menu_button report_menu_print_button report_menu_print_button_svg" style="left:145px;"></button>
+button.report_view_button[title="인쇄"]:
+<button tabindex="7" title="인쇄" onclick="m_reportHashMap['c20df6f5d8a5a4b1d87061e7c1041b14a'].mRe_printExportInfo();return false;" class="report_view_button" style="position:absolute;bottom:5px;right:95px; height:30px;width:75px;">인쇄</button>

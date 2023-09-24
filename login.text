@@ -1,0 +1,9 @@
+Write a Python scraping program using Selenium to perform login to eais according to the following procedure:
+
+def login(driver: WebDriver, username: str, password: str):
+    """Perform login to eais."""
+    Go to url "https://www.eais.go.kr/moct/awp/abb01/AWPABB01F01"
+    Wait until presence of element "div.loginForm"
+    Fill in "div.loginForm input#membId" with `username`
+    Fill in "div.loginForm input#pwd" with `password`
+    Click "div.loginForm button.btnLogin"

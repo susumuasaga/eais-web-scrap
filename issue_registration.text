@@ -1,0 +1,21 @@
+Write a Python scraping function using Selenium:
+
+def issue_registration(driver: WebDriver, address: str):
+    """Issue a registration given building address.
+
+    Args:
+        driver: current web driver
+        address: the street address of the building
+    """
+    Go to url "https://www.eais.go.kr/moct/bci/aaa02/BCIAAA02L01"
+    Click "button.btnAddrSrch"
+    Wait until presence of element "div.popAddrSearch"
+    Fill in "div.popAddrSearch input#keyword" with the address
+    Click "div.popAddrSearch button.btnNext"
+    Wait until presence of element "div.popAddrSearch div.addrList"
+    Click "div.popAddrSearch div.addrList button"
+    Wait until presence of element "input.ag-checkbox-input"
+    Check "input.ag-checkbox-input"
+    Click "button.btnAddCart"
+    Click "button.btnSubmit"
+    Click "button.btnNext"

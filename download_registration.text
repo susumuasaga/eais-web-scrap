@@ -1,0 +1,28 @@
+Write a Python scraping program using Selenium:
+
+def dowload_registration(driver: WebDriver, location: str):
+    """Downloads pdf file of the last issued registration of a building.
+
+    User should be already logged in.
+
+    The desired building registration should be already issued.
+
+    The pdf downloads in the user Downloads directory.
+    The download file is named "report.pdf".
+    If the file already exists the file is named "report (n).pdf",
+    where `n` is an appropriate integer number to prevent name collision.
+
+    Args:
+        driver (webdriver): Instance of the browser's WebDriver.
+        location (str): The land-lot number location of the building.
+    """
+    Go to url "https://www.eais.go.kr/moct/bci/aaa04/BCIAAA04L01"
+    Find the first row of "table.tableScroll" where `location` appears on the 4th column
+    On this row, click "a.tbsBadge" on the 5th column
+    The registration report will be opened in a new browser window, wait for this window to open 
+    Switch to the new window
+    Find element "button.report_menu_print_button_svg"
+    onclick = button "onclick" attribute
+    Execute script: onclick start to the first "." inclusive + "pdfDownLoad()"
+    wait for the download successed
+    Close window and switch back to the first window
